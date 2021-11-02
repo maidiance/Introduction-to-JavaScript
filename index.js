@@ -276,12 +276,16 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
-
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(word) {
+  let vowels = 0;
+  for(let i = 0; i < word.length; i++){
+    if(word[i].includes('a') || word[i].includes('A') || word[i].includes('e') || word[i].includes('E') || word[i].includes('i') || word[i].includes('I') || word[i].includes('o') || word[i].includes('O') || word[i].includes('u') || word[i].includes('U')){
+      // console.log(word[i]);
+      vowels++;
+    }
+    return vowels;
+  }
 }
-
-
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
